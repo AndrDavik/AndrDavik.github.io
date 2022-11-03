@@ -219,7 +219,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		questionCounter += 1;
 		loadBgImg(questionCounter);
 		getData(Object.keys(questionsList)[questionCounter - 1]);
-		if (questionCounter != 5) {
+		if (questionCounter != Object.keys(questionsList).length)) {
 			renderQuestion(Object.keys(questionsList)[questionCounter], Object.values(questionsList)[questionCounter]);
 			renderIndicator(questionCounter + 1);
 		}
