@@ -17,7 +17,7 @@ const mc = new Hammer(document.body);
 
 mc.on("swipeleft swiperight", function(ev) {
     console.log('aaaaa');
-    if(ev.type === "swipeleft") {
+    if(ev.type === "swiperight") {
         menu.classList.remove('active');
     }
     else {
