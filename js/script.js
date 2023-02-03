@@ -12,6 +12,20 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+//-------------------------------Swipe menu-----------------------------------//
+const mc = new Hammer(document.body);
+
+mc.on("swipeleft swiperight", function(ev) {
+    console.log('aaaaa');
+    if(ev.type === "swipeleft") {
+        menu.classList.remove('active');
+    }
+    else {
+        menu.classList.add('active');
+    }
+});
+//-----------------------------------------------------------------------------//
+
 const counters = document.querySelectorAll('.skills__ratings-counter');
 const lines = document.querySelectorAll('.skills__ratings-line span');
 
